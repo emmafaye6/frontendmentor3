@@ -83,6 +83,7 @@ button:hover{
 background-color:rgba(0, 0, 0, 0.0);
 color:hsl(0, 0%, 95%);
 border:solid hsl(0, 0%, 95%);
+cursor:pointer;
 }
 
 button:focus {
@@ -211,9 +212,11 @@ button {
   justify-content: center;
 
 button:hover {
+  
   display:flex;
   flex-wrap: nowrap;
   padding: 13px 40px;
+  cursor: pointer;
 }
 
 .attribution {
