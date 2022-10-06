@@ -15,37 +15,36 @@ p {
   font-weight: 400;
   text-align: left;
   line-height: 30px;
-  padding:0 3.5rem 1.5rem 3.5rem;
-
+  padding: 0 3.5rem 1.5rem 3.5rem;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   align-content: center;
-  background-color:hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
 }
 
 .cardwrap {
-  width:37rem;
-  min-width:32rem;
+  width: 37rem;
+  min-width: 32rem;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
-  align-content:center;
+  align-content: center;
   padding: 5rem 2rem;
-  text-align:left;
+  text-align: left;
 }
 
 .card1 {
   border-radius: 25px 25px 0 0;
-  height:45rem;
+  height: 45rem;
   background-color: hsl(31, 77%, 52%);
-  display:flex;
+  display: flex;
   flex-direction: column;
-  justify-items:center;
-  padding-top:4rem;
+  justify-items: center;
+  padding-top: 4rem;
 }
 
 .card2 {
@@ -70,38 +69,39 @@ button {
   display: flex;
   align-items: center;
   align-content: center;
-  justify-content:center;
+  justify-content: center;
   border-radius: 20px;
   padding: 13px 40px;
-  border:none;
-  max-width:10.5rem;
+  border: none;
+  max-width: 10.5rem;
   min-width: 10.5rem;
-  max-height:2.5rem;
+  max-height: 2.5rem;
 }
 
-button:hover{
-background-color:rgba(0, 0, 0, 0.0);
-color:hsl(0, 0%, 95%);
-border:solid hsl(0, 0%, 95%);
-cursor:pointer;
+button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: hsl(0, 0%, 95%);
+  border: solid hsl(0, 0%, 95%);
+  cursor: pointer;
+  padding: 0.5rem 0.5rem;
 }
 
 button:focus {
-  background-color: rgba(0, 0, 0, 0.0);
+  background-color: rgba(0, 0, 0, 0);
   color: hsl(0, 0%, 95%);
   border: solid hsl(0, 0%, 95%);
 }
 
 button:active {
-  background-color: rgba(0, 0, 0, 0.0);
+  background-color: rgba(0, 0, 0, 0);
   color: hsl(0, 0%, 95%);
   border: solid hsl(0, 0%, 95%);
 }
 
-.button1{
+.button1 {
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
-  color:hsl(31, 77%, 52%);
+  color: hsl(31, 77%, 52%);
   margin-left: 3.5rem;
 }
 
@@ -110,7 +110,7 @@ button:active {
   font-size: 15px;
   color: hsl(184, 100%, 22%);
   margin-left: 3.5rem;
-  }
+}
 
 .button3 {
   font-family: "Lexend Deca", sans-serif;
@@ -121,10 +121,10 @@ button:active {
 
 .attribution {
   font-size: 14px;
-  font-family:"Lexend Deca", sans-serif;
-  font-weight:400;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
   text-align: center;
-  padding-top:0rem;
+  padding-top: 0rem;
   color: hsl(184, 100%, 22%);
 }
 
@@ -132,105 +132,121 @@ button:active {
   color: hsl(184, 100%, 22%);
 }
 
-.icons{
-  width:6.2rem;
-  padding-left:3.5rem;
-  padding-top:2.5rem;
+.icons {
+  width: 6.2rem;
+  padding-left: 3.5rem;
+  padding-top: 2.5rem;
 }
 
-@media only screen and (max-width: 640px){
+/*640PX MEDIA QUERY*/
 
-.cardwrap {
-    width: 27rem;
-    min-width: 27rem;
+@media only screen and (max-width: 640px) {
+  body {
+    padding: 1rem;
+  }
+
+  .cardwrap {
+    width: 22rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 5rem 1.5rem;
+    padding: 2rem 1rem;
     text-align: left;
+    margin-left: 10rem;
   }
 
+  .card1 {
+    width: 22rem;
+  }
 
+  .card2 {
+    width: 22rem;
+  }
+
+  .card3 {
+    width: 22rem;
+  }
 }
 
-@media only screen and (min-width: 1440px) {
+/*1060PX MEDIA QUERY*/
 
-  body{
+@media only screen and (min-width: 1060px) {
+  body {
     overflow: hidden;
   }
 
   .cardwrap {
-      width: 65rem;
-      min-width: 60rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-content: center;
-      padding:6rem 0 0 0;
-      text-align: left;
-    }
-    
-.card1 {
-  border-radius: 25px 0 0 25px;
-  padding-top:1rem;
-  padding-bottom: 1rem;
-  height:34.5rem;
-  width:33%;
-}
+    width: 65rem;
+    min-width: 60rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 6rem 0 0 0;
+    text-align: left;
+  }
 
-.card2 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  height: 34.5rem;
-  width: 33%;
-}
+  .card1 {
+    border-radius: 25px 0 0 25px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 34.5rem;
+    width: 33%;
+  }
 
-.card3 {
-  border-radius: 0px 25px 25px 0;
-  padding-top: 1rem;
-  padding-bottom:1rem;
-  height: 34.5rem;
-  width: 33%;
-}
+  .card2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 34.5rem;
+    width: 33%;
+  }
 
-p{
-  font-family: "Lexend Deca", sans-serif;
-  color: hsla(0, 0%, 100%, 0.75);
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: left;
-  line-height: 32px;
-  padding: 0 3.5rem 1.5rem 3.5rem;
-  margin-top:-20px;
-}
+  .card3 {
+    border-radius: 0px 25px 25px 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 34.5rem;
+    width: 33%;
+  }
 
-button {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  p {
+    font-family: "Lexend Deca", sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 32px;
+    padding: 0 3.5rem 1.5rem 3.5rem;
+    margin-top: -20px;
+  }
 
-button:hover {
-  
-  display:flex;
-  flex-wrap: nowrap;
-  padding: 13px 40px;
-  cursor: pointer;
-}
+  button {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
 
-.attribution {
-  font-size: 12px;
-  font-family:"Lexend Deca", sans-serif;
-  font-weight: 400;
-  text-align: center;
-  padding-top: 1.5rem;
-  color: hsl(184, 100%, 22%);
-}
+  button:hover {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+  }
 
-.attribution a {
-  color: hsl(184, 100%, 22%);
-}
+  .attribution {
+    font-size: 12px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 1.5rem;
+    color: hsl(184, 100%, 22%);
+  }
+
+  .attribution a {
+    color: hsl(184, 100%, 22%);
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
